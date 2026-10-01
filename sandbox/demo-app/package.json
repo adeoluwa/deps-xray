@@ -1,0 +1,9 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tiny app that trusts tiny-pad with a caret range, like most real apps do",
+  "dependencies": {
+    "tiny-pad": "^1.0.0"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "demo-app",
+      "version": "1.0.0",
+      "dependencies": { "a": "^1.0.0", "@scope/b": "^2.0.0" },
+      "devDependencies": { "dev-tool": "^1.0.0" }
+    },
+    "node_modules/a": {
+      "version": "1.0.0",
+      "hasInstallScript": true,
+      "license": "MIT",
+      "dependencies": { "c": "^1.0.0", "shared": "^2.0.0" }
+    },
+    "node_modules/a/node_modules/shared": { "version": "2.0.0", "license": "MIT" },
+    "node_modules/c": {
+      "version": "1.0.0",
+      "license": "ISC",
+      "dependencies": { "shared": "^1.0.0" }
+    },
+    "node_modules/shared": { "version": "1.0.0", "license": "MIT" },
+    "node_modules/@scope/b": {
+      "version": "2.0.0",
+      "license": "Apache-2.0",
+      "dependencies": { "a": "^1.0.0", "c": "^1.0.0" }
+    },
+    "node_modules/dev-tool": {
+      "version": "1.0.0",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": { "dev-only-dep": "^1.0.0", "shared": "^1.0.0" }
+    },
+    "node_modules/dev-only-dep": {
+      "version": "1.0.0",
+      "dev": true,
+      "dependencies": { "dev-tool": "^1.0.0" }
+    }
+  }
+}

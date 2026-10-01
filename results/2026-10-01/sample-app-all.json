@@ -1,0 +1,242 @@
+﻿{
+  "project": "sample-app@1.0.0",
+  "lockfileVersion": 3,
+  "scope": "all",
+  "direct": 2,
+  "transitive": 335,
+  "total": 337,
+  "devOnly": 271,
+  "platformSpecificExcluded": 37,
+  "maxDepth": 10,
+  "deepestChain": [
+    "sample-app",
+    "jest@30.5.2",
+    "@jest/core@30.5.2",
+    "@jest/transform@30.5.2",
+    "babel-plugin-istanbul@8.0.0",
+    "test-exclude@7.0.2",
+    "glob@10.5.0",
+    "jackspeak@3.4.3",
+    "@isaacs/cliui@8.0.2",
+    "string-width@5.1.2",
+    "eastasianwidth@0.2.0"
+  ],
+  "duplicates": [
+    {
+      "name": "ansi-styles",
+      "versions": [
+        "4.3.0",
+        "5.2.0",
+        "6.2.3"
+      ]
+    },
+    {
+      "name": "lru-cache",
+      "versions": [
+        "10.4.3",
+        "11.5.3",
+        "5.1.1"
+      ]
+    },
+    {
+      "name": "ansi-regex",
+      "versions": [
+        "5.0.1",
+        "6.4.0"
+      ]
+    },
+    {
+      "name": "balanced-match",
+      "versions": [
+        "1.0.2",
+        "4.0.4"
+      ]
+    },
+    {
+      "name": "brace-expansion",
+      "versions": [
+        "2.1.7",
+        "5.0.12"
+      ]
+    },
+    {
+      "name": "camelcase",
+      "versions": [
+        "5.3.1",
+        "6.3.0"
+      ]
+    },
+    {
+      "name": "content-type",
+      "versions": [
+        "1.0.5",
+        "2.1.0"
+      ]
+    },
+    {
+      "name": "emoji-regex",
+      "versions": [
+        "8.0.0",
+        "9.2.2"
+      ]
+    },
+    {
+      "name": "glob",
+      "versions": [
+        "10.5.0",
+        "13.0.6"
+      ]
+    },
+    {
+      "name": "minimatch",
+      "versions": [
+        "10.2.6",
+        "9.0.9"
+      ]
+    },
+    {
+      "name": "p-limit",
+      "versions": [
+        "2.3.0",
+        "3.1.0"
+      ]
+    },
+    {
+      "name": "path-scurry",
+      "versions": [
+        "1.11.1",
+        "2.0.2"
+      ]
+    },
+    {
+      "name": "picomatch",
+      "versions": [
+        "2.3.2",
+        "4.0.7"
+      ]
+    },
+    {
+      "name": "semver",
+      "versions": [
+        "6.3.1",
+        "7.8.5"
+      ]
+    },
+    {
+      "name": "signal-exit",
+      "versions": [
+        "3.0.7",
+        "4.1.0"
+      ]
+    },
+    {
+      "name": "string-width",
+      "versions": [
+        "4.2.3",
+        "5.1.2"
+      ]
+    },
+    {
+      "name": "strip-ansi",
+      "versions": [
+        "6.0.1",
+        "7.2.0"
+      ]
+    },
+    {
+      "name": "supports-color",
+      "versions": [
+        "7.2.0",
+        "8.1.1"
+      ]
+    },
+    {
+      "name": "wrap-ansi",
+      "versions": [
+        "7.0.0",
+        "8.1.0"
+      ]
+    }
+  ],
+  "installScripts": [
+    "@parcel/watcher@2.6.0",
+    "unrs-resolver@1.12.2"
+  ],
+  "mostDependedOn": [
+    {
+      "id": "@babel/core@7.29.7",
+      "dependents": 25
+    },
+    {
+      "id": "@jest/types@30.5.1",
+      "dependents": 24
+    },
+    {
+      "id": "chalk@4.1.2",
+      "dependents": 21
+    },
+    {
+      "id": "jest-util@30.5.1",
+      "dependents": 21
+    },
+    {
+      "id": "@babel/helper-plugin-utils@7.29.7",
+      "dependents": 18
+    },
+    {
+      "id": "@types/node@26.6.3",
+      "dependents": 17
+    },
+    {
+      "id": "graceful-fs@4.2.11",
+      "dependents": 15
+    },
+    {
+      "id": "@babel/types@7.29.8",
+      "dependents": 12
+    },
+    {
+      "id": "slash@3.0.0",
+      "dependents": 11
+    },
+    {
+      "id": "pretty-format@30.5.1",
+      "dependents": 10
+    }
+  ],
+  "licenses": [
+    {
+      "license": "MIT",
+      "count": 281
+    },
+    {
+      "license": "ISC",
+      "count": 30
+    },
+    {
+      "license": "BSD-3-Clause",
+      "count": 10
+    },
+    {
+      "license": "BlueOak-1.0.0",
+      "count": 8
+    },
+    {
+      "license": "Apache-2.0",
+      "count": 5
+    },
+    {
+      "license": "(MIT OR CC0-1.0)",
+      "count": 1
+    },
+    {
+      "license": "CC-BY-4.0",
+      "count": 1
+    },
+    {
+      "license": "BSD-2-Clause",
+      "count": 1
+    }
+  ],
+  "unresolved": []
+}

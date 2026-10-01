@@ -1,0 +1,47 @@
+﻿deps-xray — sample-app@1.0.0 (lockfile v3, all dependencies)
+
+You chose 2 direct dependencies.
+You actually install 337 packages (335 transitive, 168.5x multiplier).
+271 of them are dev-only.
+(37 OS/CPU-specific optional packages not counted; use --all-platforms to include them.)
+Deepest dependency sits 10 hops from your project:
+  sample-app → jest@30.5.2 → @jest/core@30.5.2 → @jest/transform@30.5.2 → babel-plugin-istanbul@8.0.0 → test-exclude@7.0.2 → glob@10.5.0 → jackspeak@3.4.3 → @isaacs/cliui@8.0.2 → string-width@5.1.2 → eastasianwidth@0.2.0
+
+Install scripts (code that runs during npm install): 2
+  @parcel/watcher@2.6.0
+  unrs-resolver@1.12.2
+
+Packages installed in multiple versions: 19
+  ansi-styles: 4.3.0, 5.2.0, 6.2.3
+  lru-cache: 10.4.3, 11.5.3, 5.1.1
+  ansi-regex: 5.0.1, 6.4.0
+  balanced-match: 1.0.2, 4.0.4
+  brace-expansion: 2.1.7, 5.0.12
+  camelcase: 5.3.1, 6.3.0
+  content-type: 1.0.5, 2.1.0
+  emoji-regex: 8.0.0, 9.2.2
+  glob: 10.5.0, 13.0.6
+  minimatch: 10.2.6, 9.0.9
+  … and 9 more
+
+Most depended-on packages (blast radius):
+  @babel/core@7.29.7 ← 25 dependents
+  @jest/types@30.5.1 ← 24 dependents
+  chalk@4.1.2 ← 21 dependents
+  jest-util@30.5.1 ← 21 dependents
+  @babel/helper-plugin-utils@7.29.7 ← 18 dependents
+  @types/node@26.6.3 ← 17 dependents
+  graceful-fs@4.2.11 ← 15 dependents
+  @babel/types@7.29.8 ← 12 dependents
+  slash@3.0.0 ← 11 dependents
+  pretty-format@30.5.1 ← 10 dependents
+
+Licenses:
+  MIT: 281
+  ISC: 30
+  BSD-3-Clause: 10
+  BlueOak-1.0.0: 8
+  Apache-2.0: 5
+  (MIT OR CC0-1.0): 1
+  CC-BY-4.0: 1
+  BSD-2-Clause: 1

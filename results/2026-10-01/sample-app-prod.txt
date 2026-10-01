@@ -1,0 +1,28 @@
+﻿deps-xray — sample-app@1.0.0 (lockfile v3, production only)
+
+You chose 1 direct dependency.
+You actually install 66 packages (65 transitive, 66.0x multiplier).
+Deepest dependency sits 7 hops from your project:
+  sample-app → express@5.2.1 → qs@6.16.0 → side-channel@1.1.1 → side-channel-map@1.0.1 → get-intrinsic@1.3.0 → get-proto@1.0.1 → dunder-proto@1.0.1
+
+Install scripts (code that runs during npm install): 0
+
+Packages installed in multiple versions: 1
+  content-type: 1.0.5, 2.1.0
+
+Most depended-on packages (blast radius):
+  es-errors@1.3.0 ← 8 dependents
+  debug@4.4.3 ← 5 dependents
+  encodeurl@2.0.0 ← 4 dependents
+  escape-html@1.0.3 ← 4 dependents
+  http-errors@2.0.1 ← 4 dependents
+  mime-types@3.0.2 ← 4 dependents
+  object-inspect@1.13.4 ← 4 dependents
+  on-finished@2.4.1 ← 4 dependents
+  parseurl@1.3.3 ← 4 dependents
+  statuses@2.0.2 ← 4 dependents
+
+Licenses:
+  MIT: 61
+  ISC: 4
+  BSD-3-Clause: 1

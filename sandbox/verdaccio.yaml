@@ -1,0 +1,25 @@
+# Local-only registry for the failure-mode demos.
+# Paths are relative to this file. Both folders are wiped at the start of every run.
+storage: ./.registry/storage
+
+auth:
+  htpasswd:
+    file: ./.registry/htpasswd
+    max_users: 10
+
+# Deliberately NO "uplinks" section: this registry never talks to registry.npmjs.org,
+# so every package in the demo comes from here and nothing leaks out.
+
+packages:
+  "**":
+    access: $all
+    publish: $authenticated
+    unpublish: $authenticated
+
+listen: 127.0.0.1:4873
+
+log:
+  type: stdout
+  format: pretty
+  level: warn
+

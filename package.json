@@ -1,0 +1,27 @@
+{
+  "name": "deps-xray",
+  "version": "0.1.0",
+  "description": "See what you actually install: an X-ray of npm dependency trees",
+  "scripts": {
+    "build": "tsc",
+    "xray": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "bin": {
+    "deps-xray": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}

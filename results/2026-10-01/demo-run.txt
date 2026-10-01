@@ -1,0 +1,69 @@
+﻿
+> demo
+> tsx run-demo.ts
+
+deps-xray sandbox: local-only dependency failure demos
+registry: http://127.0.0.1:4873/ (no uplinks; nothing reaches the public npm registry)
+
+======================================================================
+Scenario 1: a silent update arrives through a semver range
+======================================================================
+
+→ Baseline: the app installs tiny-pad@^1.0.0 and commits its lockfile
+  published tiny-pad@1.0.0 (original) to the local registry
+  app output: "Invoice #      42"
+  ✔ baseline installs tiny-pad@1.0.0
+
+→ The maintainer publishes 1.0.1, changing the default pad character
+  published tiny-pad@1.0.1 (changed) to the local registry
+
+→ Unprotected: a fresh install without the lockfile (e.g. lockfile not committed)
+  installed tiny-pad@1.0.1, app output: "Invoice #00000042"
+  ✔ the caret range silently pulls in 1.0.1
+  ✔ the app's output changed without any change to the app's code
+
+→ Mitigation: restore the committed lockfile and use `npm ci`
+  installed tiny-pad@1.0.0, app output: "Invoice #      42"
+  ✔ npm ci installs exactly what the lockfile says
+  ✔ the app's output is unchanged
+
+======================================================================
+Scenario 2: installing a package runs its code
+======================================================================
+
+→ The maintainer publishes 1.1.0 with a postinstall script
+  published tiny-pad@1.1.0 (postinstall) to the local registry
+
+→ Detection first: resolve a lockfile WITHOUT installing, then scan it with deps-xray
+  packages with install scripts: tiny-pad@1.1.0
+  ✔ deps-xray flags tiny-pad@1.1.0 from the lockfile alone
+  ✔ nothing has run yet: --package-lock-only executes no package code
+
+→ Unprotected: a normal fresh install
+  installed tiny-pad@1.1.0
+  ✔ the postinstall script ran and wrote SANDBOX-MARKER.txt into the project
+  tiny-pad's postinstall script ran at 2026-10-01T13:48:07.123Z.
+  It wrote this file into your project. It could have run any command your account can.
+
+→ Mitigation: install with --ignore-scripts
+  installed tiny-pad@1.1.0, app output: "Invoice #00000042"
+  ✔ no script ran, but the package is installed and works
+
+======================================================================
+Scenario 3: the package disappears from the registry
+======================================================================
+
+→ The maintainer unpublishes tiny-pad entirely
+  tiny-pad removed from the local registry
+
+→ Unprotected: a new machine (empty cache) tries to install
+  install failed: npm error code E404
+  ✔ the build breaks: there is nothing left to download
+
+→ Mitigation: committed lockfile + an existing cache/mirror, installed offline
+  npm ci --offline succeeded
+  ✔ the lockfile's exact tarball is restored from cache
+  ✔ the app still works with the package gone upstream
+
+======================================================================
+Summary: 12/12 checks behaved as expected

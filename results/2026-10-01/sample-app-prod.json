@@ -1,0 +1,88 @@
+﻿{
+  "project": "sample-app@1.0.0",
+  "lockfileVersion": 3,
+  "scope": "prod",
+  "direct": 1,
+  "transitive": 65,
+  "total": 66,
+  "devOnly": 0,
+  "platformSpecificExcluded": 0,
+  "maxDepth": 7,
+  "deepestChain": [
+    "sample-app",
+    "express@5.2.1",
+    "qs@6.16.0",
+    "side-channel@1.1.1",
+    "side-channel-map@1.0.1",
+    "get-intrinsic@1.3.0",
+    "get-proto@1.0.1",
+    "dunder-proto@1.0.1"
+  ],
+  "duplicates": [
+    {
+      "name": "content-type",
+      "versions": [
+        "1.0.5",
+        "2.1.0"
+      ]
+    }
+  ],
+  "installScripts": [],
+  "mostDependedOn": [
+    {
+      "id": "es-errors@1.3.0",
+      "dependents": 8
+    },
+    {
+      "id": "debug@4.4.3",
+      "dependents": 5
+    },
+    {
+      "id": "encodeurl@2.0.0",
+      "dependents": 4
+    },
+    {
+      "id": "escape-html@1.0.3",
+      "dependents": 4
+    },
+    {
+      "id": "http-errors@2.0.1",
+      "dependents": 4
+    },
+    {
+      "id": "mime-types@3.0.2",
+      "dependents": 4
+    },
+    {
+      "id": "object-inspect@1.13.4",
+      "dependents": 4
+    },
+    {
+      "id": "on-finished@2.4.1",
+      "dependents": 4
+    },
+    {
+      "id": "parseurl@1.3.3",
+      "dependents": 4
+    },
+    {
+      "id": "statuses@2.0.2",
+      "dependents": 4
+    }
+  ],
+  "licenses": [
+    {
+      "license": "MIT",
+      "count": 61
+    },
+    {
+      "license": "ISC",
+      "count": 4
+    },
+    {
+      "license": "BSD-3-Clause",
+      "count": 1
+    }
+  ],
+  "unresolved": []
+}

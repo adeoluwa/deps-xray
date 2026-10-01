@@ -1,0 +1,14 @@
+{
+ "name": "deps-xray-sandbox",
+  "private": true,
+  "type": "module",
+  "description": "Offline, local-only demonstrations of dependency failure modes",
+  "scripts": {
+    "demo": "tsx run-demo.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "tsx": "^4.23.15",
+    "verdaccio": "^6.10.4"
+  }
+}
